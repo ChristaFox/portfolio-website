@@ -12,16 +12,16 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand">
-                    <img src="https://storage.googleapis.com/personal_website_christafox/personal_website/FullSizeRender.jpg" alt="fox" width="50px">
+                    <img src="https://storage.googleapis.com/personal_website_christafox/personal_website/FullSizeRender.jpg" alt="fox" width="50">
+                    @Html.ActionLink("Christa Fox", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                 </a><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
-                @Html.ActionLink("Christa Fox", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
             </div>
-            </div>
+        </div>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -30,8 +30,6 @@
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
             </div>
-        </div>
-    </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
